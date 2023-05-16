@@ -17,5 +17,5 @@ Verisetinden elde ettiğimiz yüz görüntülerini kendi derin öğrenme modelim
 Problemin çözümü için oluşturduğumuz algoritmamız Veri Ön İşleme, Filtreleme, Derin Öğrenme Modelinin Oluşturulması, Sonuçların Alınması ve Değerlendirilmesi olmak üzere 4 aşamadan
 oluşmaktadır.
 <br>
-
+<br>
 Projemizin şuanda 2. aşamasını tamamlamış bulunmaktayız ve derin öğrenme modelimizi oluşturmak için çalışmalar yapmaktayız.
