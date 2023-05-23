@@ -13,9 +13,44 @@ Fer2013 verisetini kaggle platformu kullanılarak elde edilmiştir. Veriseti 7 s
 
 Verisetinden elde ettiğimiz yüz görüntülerini kendi derin öğrenme modelimizi oluşturarak yüksek bir başarı ile sınıflandırmayı amaçlamaktayız.
 <hr>
-<H3>Kullanılması Planlanan Algoritmalar</h3>
+<H2>Kullanılması Planlanan Algoritmalar</h2>
 Problemin çözümü için oluşturduğumuz algoritmamız Veri Ön İşleme, Filtreleme, Derin Öğrenme Modelinin Oluşturulması, Sonuçların Alınması ve Değerlendirilmesi olmak üzere 4 aşamadan
 oluşmaktadır.
+<br><br>
+
+<h3>Veri Ön İşleme Aşaması</h3>
+Projemizin ilk aşamasında verilerimizi derin öğrenme ile sınıflandırma için uygun hale getirme amacıyla train test ve validation olarak 3 klasor halinde parçalara ayırdık. Daha sonrasında eksik olan verilerimizi diğer sınıflar ile denk hale getirmek için disgust sınıfına veri çoğaltma(data augmentation) işlemi uyguladık. Bu işlem ile sınıflandırma sırasında karşımıza çıkabilecek sorunların önüne geçmeyi amaçlamaktayız. 
+<br><br>
+
+Train, test ve validation için ayrı ayrı uyguladığımız veri çoğaltma işlemi ile disgust sınıfında bulunan görüntülerin sayısını 9 katına çıkarttık, bu sayede görüntü sayısını diğer sınıfların görüntü sayısına yaklaştırmış olduk. 
+<br><br>
+Veri çoğaltma işlemi için kullandığımız yöntemler:
+<ul>
+  <li>Sağ-Sol Öteleme</li>
+  <li>Ters Döndürme</li>
+  <li>Parlaklık</li>
+  <li>Yaklaştırma</li>
+</ul> 
+Bu yöntemler `from keras.preprocessing.image import ImageDataGenerator` classı kullanılarak yapılmıştır.
+<br><br>
+
+<h3>Görüntülerin Filtrelenmesi</h3>
+Verisetinden elde ettiğimiz görüntülere filtre uyguladığımız aşamadır. Kullandığımız filtreler ve kullanım amaçları aşağıda verilmiştir.
+<ul>
+  <li>Yumuşatma (Smoothing) Filtresi: Yüzdeki kırışıklıkları, lekeleri veya diğer küçük detayları gidermek için kullanılmıştır.</li>
+  <li>Kontrast Artırma Filtresi: Yüzdeki kontrastı artırarak ayrıntıları daha belirgin hale getirmesi amaçlanmıştır.</li>
+  <li>Işıklandırma Düzeltme Filtresi: Yüzdeki ışıklandırma dengesizliklerini gidermek ve yüzün daha doğal görünmesini sağlamak için kullanılmıştır.</li>
+</ul> 
+Görüntülere uygulanan filtrelerden elde edilen verilere aşağıda küçük bir örnek verilmiştir.
+
+![filtre](https://github.com/RecepTahirGunlu/Duygu-Tanima/assets/94441940/eb5b31e5-fe22-493a-9fe9-7dfda2c072eb)
+
+Kullanılan filtreler verisetinde bulunan bütün görüntülere uygulanmıştır.
 <br>
-<br>
+
+
+
+
+
+<br><br>
 Projemizin şuanda 2. aşamasını tamamlamış bulunmaktayız ve derin öğrenme modelimizi oluşturmak için çalışmalar yapmaktayız.
