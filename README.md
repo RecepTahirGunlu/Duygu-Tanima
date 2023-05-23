@@ -41,8 +41,9 @@ Verisetinden elde ettiğimiz görüntülere filtre uyguladığımız aşamadır.
   <li>Kontrast Artırma Filtresi: Yüzdeki kontrastı artırarak ayrıntıları daha belirgin hale getirmesi amaçlanmıştır.</li>
   <li>Işıklandırma Düzeltme Filtresi: Yüzdeki ışıklandırma dengesizliklerini gidermek ve yüzün daha doğal görünmesini sağlamak için kullanılmıştır.</li>
 </ul> 
-Kullanılan filtreler verisetinde bulunan bütün görüntülere uygulanmıştır. 
-
+Kullanılan filtreler verisetinde bulunan bütün görüntülere uygulanmıştır.
+<br>
+![filter](https://github.com/RecepTahirGunlu/Duygu-Tanima/assets/94441940/c9805701-ab86-45b2-9211-5bdb771de80b)
 
 
 
