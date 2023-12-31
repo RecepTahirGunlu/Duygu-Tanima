@@ -52,5 +52,3 @@ Kullanılan filtreler verisetinde bulunan bütün görüntülere uygulanmıştı
 
 
 
-<br><br>
-Projemizin şuanda 2. aşamasını tamamlamış bulunmaktayız ve derin öğrenme modelimizi oluşturmak için çalışmalar yapmaktayız.
